@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zanflow - Enterprise Startup Intelligence Platform</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 1. Navigation Bar (Navbar พร้อม Anchor Links & ลิงก์ไปหน้า Team Members) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold fs-4" href="#home">
+                <div class="navbar-brand-logo">
+                    <i class="bi bi-cpu-fill text-white fs-5"></i>
+                </div>
+                <span>Zanflow<span class="text-info fs-6">.inc</span></span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-lg-3">
+                    <li class="nav-item"><a class="nav-link text-light px-2" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-light px-2" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link text-light px-2" href="#product-details">Capabilities</a></li>
+                    <li class="nav-item"><a class="nav-link text-light px-2" href="#pricing">Price List</a></li>
+                    <li class="nav-item"><a class="nav-link text-light px-2" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-outline-info rounded-pill px-4 py-2 fw-semibold border-2" href="about.html">
+                            <i class="bi bi-people-fill me-1"></i> Team Members
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Header (Title / Hero Section) - Desktop = 2 columns/row, Mobile = 1 column/row -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Left Column: Title & Intro -->
+                <div class="col-lg-6 col-12 text-center text-lg-start">
+                    <div class="badge-glow mb-3">
+                        <i class="bi bi-lightning-charge-fill"></i> Powered by Zati AI Core Engine
+                    </div>
+                    <h1 class="display-4 hero-title mb-3">
+                        The Zanflow Ecosystem — <span class="text-gradient">Every Angle of Social Data.</span>
+                    </h1>
+                    <p class="lead text-secondary mb-4 fs-5">
+                        แอปพลิเคชันบริหารจัดการทีม วางแผนงาน และวิเคราะห์ข้อมูลโซเชียลมีเดียด้วย AI อัจฉริยะ รวบรวมทุกเครื่องมือที่ Startup ต้องใช้ไว้ในแพลตฟอร์มเดียว
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+                        <a href="#download" class="btn btn-primary btn-lg rounded-pill px-4 py-3 fw-bold shadow-lg">
+                            <i class="bi bi-rocket-takeoff me-2"></i> เริ่มต้นใช้งานฟรี
+                        </a>
+                        <a href="#product-details" class="btn btn-outline-light btn-lg rounded-pill px-4 py-3 fw-semibold">
+                            <i class="bi bi-play-circle me-2"></i> เจาะลึกฟีเจอร์สินค้า
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Product Image Mockup -->
+                <div class="col-lg-6 col-12 text-center">
+                    <div class="hero-img-container">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80" alt="Zanflow Analytics Dashboard" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="row mt-5 pt-4 border-top border-secondary border-opacity-20 g-4">
+                <div class="col-6 col-md-3">
+                    <div class="stat-box">
+                        <div class="stat-number">10+</div>
+                        <div class="text-secondary small">Integrated Products</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-box">
+                        <div class="stat-number">24/7</div>
+                        <div class="text-secondary small">Support Coverage</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-box">
+                        <div class="stat-number">99.9%</div>
+                        <div class="text-secondary small">Uptime SLA</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-box">
+                        <div class="stat-number">SEA</div>
+                        <div class="text-secondary small">Market Expertise</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Features Section - Responsive Grid (Desktop 3 Columns / Tablet & Mobile 1 Column) -->
+    <section id="features" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <span class="text-info fw-bold text-uppercase tracking-wider">Product Features</span>
+                <h2 class="display-5 fw-bold mt-2">One Platform. Every Insight.</h2>
+                <p class="text-secondary fs-5">รวมฟีเจอร์การวิเคราะห์ การติดตามเทรนด์ และการทำงานร่วมกันในทีมไว้ในจุดเดียว</p>
+            </div>
+
+            <!-- Grid 3 Columns บน Desktop (col-lg-4) และ 1 Column บน Tablet/Mobile (col-12) -->
+            <div class="row g-4">
+                <!-- Feature Module 1 -->
+                <div class="col-lg-4 col-12">
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <i class="bi bi-cpu-fill"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Zati AI Core Engine</h4>
+                        <p class="text-secondary mb-3">
+                            สมองกลอัจฉริยะที่ทำหน้าที่ประมวลผลภาษาธรรมชาติ (NLP) ดึง Insights จากข้อความสนทนาและโซเชียลมีเดียได้อย่างแม่นยำ
+                        </p>
+                        <ul class="list-unstyled text-secondary small d-flex flex-column gap-2 mb-4">
+                            <li><i class="bi bi-check2-circle text-info me-2"></i><strong>Sentiment Analysis:</strong> จำแนกอารมณ์ บวก/ลบ/ปานกลาง</li>
+                            <li><i class="bi bi-check2-circle text-info me-2"></i><strong>OCR & Image:</strong> แปลงข้อความจากรูปภาพอัตโนมัติ</li>
+                            <li><i class="bi bi-check2-circle text-info me-2"></i><strong>Spike Alert:</strong> แจ้งเตือนวิกฤตแบรนด์เร่งด่วน</li>
+                        </ul>
+                        <a href="#product-details" class="text-info text-decoration-none fw-semibold small">
+                            ดูรายละเอียดเทคโนโลยี <i class="bi bi-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Feature Module 2 -->
+                <div class="col-lg-4 col-12">
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <i class="bi bi-kanban-fill"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Smart Task & Workflow</h4>
+                        <p class="text-secondary mb-3">
+                            ระบบบริหารจัดการงานสไตล์ Kanban และ Scrum Board แบบปรับแต่งได้อิสระ เชื่อมโยงงานของทุกแผนกเข้าหากัน
+                        </p>
+                        <ul class="list-unstyled text-secondary small d-flex flex-column gap-2 mb-4">
+                            <li><i class="bi bi-check2-circle text-info me-2"></i><strong>Auto Ticket Routing:</strong> มอบหมายงานตามทักษะ</li>
+                            <li><i class="bi bi-check2-circle text-info me-2"></i><strong>Real-time Sync:</strong> อัปเดตสถานะงานทุกอุปกรณ์</li>
+                            <li><i class="bi bi-check2-circle text-info me-2"></i><strong>Time Tracking:</strong> บันทึกระยะเวลาทำโปรเจกต์</li>
+                        </ul>
+                        <a href="#product-details" class="text-info text-decoration-none fw-semibold small">
+                            ดูรายละเอียดเทคโนโลยี <i class="bi bi-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Feature Module 3 -->
+                <div class="col-lg-4 col-12">
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <i class="bi bi-bar-chart-line-fill"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Social Intelligence</h4>
+                        <p class="text-secondary mb-3">
+                            ดักจับทุกการเอ่ยถึง (Mentions) คีย์เวิร์ด และเทรนด์สำคัญบนสื่อสังคมออนไลน์เพื่อนำมาวิเคราะห์โอกาสทางธุรกิจ
+                        </p>
+                        <ul class="list-unstyled text-secondary small d-flex flex-column gap-2 mb-4">
+                            <li><i class="bi bi-check2-circle text-info me-2"></i><strong>Multi-layer Keywords:</strong> ตั้งค่าคีย์เวิร์ดหลายชั้น</li>
+                            <li><i class="bi bi-check2-circle text-info me-2"></i><strong>Competitor Tracking:</strong> เปรียบเทียบคู่แข่ง</li>
+                            <li><i class="bi bi-check2-circle text-info me-2"></i><strong>Demographic:</strong> วิเคราะห์กลุ่มเป้าหมายเชิงลึก</li>
+                        </ul>
+                        <a href="#product-details" class="text-info text-decoration-none fw-semibold small">
+                            ดูรายละเอียดเทคโนโลยี <i class="bi bi-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3.1 Detailed Product Capabilities & AI Modules Breakdown -->
+    <section id="product-details" class="py-5 bg-dark bg-opacity-40 border-top border-secondary border-opacity-20">
+        <div class="container py-4">
+            <div class="row align-items-center g-5 mb-5">
+                <div class="col-lg-6 col-12">
+                    <span class="badge bg-info bg-opacity-10 text-info border border-info px-3 py-2 rounded-pill mb-3">
+                        Deep Dive Product Capabilities
+                    </span>
+                    <h2 class="display-6 fw-bold mb-4">เปลี่ยนข้อมูลกระจัดกระจาย ให้กลายเป็นความได้เปรียบทางธุรกิจ</h2>
+                    <p class="text-secondary fs-5 mb-4">
+                        Zanflow เป็นศูนย์กลางข้อมูล (Centralized Data Hub) ที่นำ AI มาเชื่อมต่อช่องทางโซเชียลมีเดีย ข้อความเสนอแนะจากลูกค้า และกระบวนการทำงานภายในทีมเข้าด้วยกัน
+                    </p>
+
+                    <div class="d-flex flex-column gap-3">
+                        <div class="d-flex gap-3 align-items-start">
+                            <div class="p-2 rounded-3 bg-primary bg-opacity-20 text-info mt-1">
+                                <i class="bi bi-shield-lock-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Enterprise-Grade Security & PII Encryption</h5>
+                                <p class="text-secondary small mb-0">ปกป้องข้อมูลความลับขององค์กรและข้อมูลส่วนบุคคลของลูกค้าด้วยระบบเข้ารหัส PII มาตรฐาน IEEE และ ISO 27001</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-3 align-items-start">
+                            <div class="p-2 rounded-3 bg-primary bg-opacity-20 text-info mt-1">
+                                <i class="bi bi-diagram-3-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Seamless API & Tool Integration</h5>
+                                <p class="text-secondary small mb-0">รองรับการเชื่อมต่อ API เข้ากับซอฟต์แวร์ชั้นนำ เช่น Slack, Google Workspace, GitHub, Jira และ LINE Official Account</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                    <div class="p-4 rounded-4 bg-dark border border-secondary border-opacity-20 shadow-lg">
+                        <h4 class="fw-bold mb-4 text-gradient"><i class="bi bi-layers-half me-2"></i>เทคโนโลยีหลักใน Zanflow Suite</h4>
+                        <div class="table-responsive">
+                            <table class="table table-dark table-hover align-middle mb-0 border-secondary">
+                                <thead>
+                                    <tr class="text-info border-bottom border-secondary">
+                                        <th>ชื่อโมดูล</th>
+                                        <th>ฟังก์ชันการทำงานหลัก</th>
+                                        <th>ระดับการประมวลผล</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="small text-secondary">
+                                    <tr>
+                                        <td class="fw-semibold text-white">Social Listening</td>
+                                        <td>ดักจับคีย์เวิร์ดบนโซเชียลมีเดีย 24/7</td>
+                                        <td><span class="badge bg-success bg-opacity-20 text-success">Real-time</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-semibold text-white">Quick Analysis</td>
+                                        <td>ทำวิจัยตลาดสเปกตรัมกว้างทันที</td>
+                                        <td><span class="badge bg-info bg-opacity-20 text-info">Automated</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-semibold text-white">Zanflow Desk</td>
+                                        <td>ระบบบริการลูกค้า Omnichannel</td>
+                                        <td><span class="badge bg-primary bg-opacity-20 text-primary">AI Integrated</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-semibold text-white">Trend X Tracker</td>
+                                        <td>ติดตามกระแสไวรัลล่วงหน้า</td>
+                                        <td><span class="badge bg-warning bg-opacity-20 text-warning">Predictive AI</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-semibold text-white">GenAI Chat</td>
+                                        <td>ผู้ช่วยตอบคำถามประจำองค์กร</td>
+                                        <td><span class="badge bg-purple bg-opacity-20 text-light" style="background-color: #7928ca;">LLM Model</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Use Cases -->
+            <div class="mt-5 pt-3">
+                <div class="text-center mb-4">
+                    <h3 class="fw-bold">ออกแบบมาเพื่อตอบโจทย์ทุกตำแหน่งใน Startup</h3>
+                    <p class="text-secondary">เพิ่มประสิทธิภาพการทำงานแบบก้าวกระโดดให้แก่ทีมงานของคุณ</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4 col-12">
+                        <div class="p-4 rounded-4 bg-dark border border-secondary border-opacity-20 h-100">
+                            <div class="text-info fs-3 mb-2"><i class="bi bi-person-badge-fill"></i></div>
+                            <h5 class="fw-bold">สำหรับ Founder & CEO</h5>
+                            <p class="text-secondary small mb-0">มองเห็นภาพรวมการดำเนินงานของบริษัท ประสิทธิภาพทีม และกระแสตอบรับจากลูกค้าผ่าน Dashboard ช่วยการตัดสินใจระดับกลยุทธ์ได้อย่างแม่นยำ</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="p-4 rounded-4 bg-dark border border-secondary border-opacity-20 h-100">
+                            <div class="text-info fs-3 mb-2"><i class="bi bi-megaphone-fill"></i></div>
+                            <h5 class="fw-bold">สำหรับทีม Marketing & PR</h5>
+                            <p class="text-secondary small mb-0">เข้าถึงข้อมูลความต้องการของผู้บริโภค วัดผลตอบรับแคมเปญโฆษณาแบบ Real-time และเจาะลึกอินฟลูเอนเซอร์ที่มีอิทธิพลต่อแบรนด์ตรงจุด</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="p-4 rounded-4 bg-dark border border-secondary border-opacity-20 h-100">
+                            <div class="text-info fs-3 mb-2"><i class="bi bi-code-slash"></i></div>
+                            <h5 class="fw-bold">สำหรับทีม Product & Dev</h5>
+                            <p class="text-secondary small mb-0">ตรวจจับข้อผิดพลาด (Bugs) หรือคำร้องขอฟีเจอร์ใหม่จากผู้ใช้งานบนโซเชียลมีเดีย แล้วแปลงเป็น Task ใน Kanban Board เพื่อพัฒนาได้ทันที</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Price List Section (Optional Section) -->
+    <section id="pricing" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <span class="text-info fw-bold text-uppercase">Flexible Pricing</span>
+                <h2 class="display-5 fw-bold mt-2">แผนราคาสำหรับทุกขนาดธุรกิจ</h2>
+                <p class="text-secondary">เลือกแพ็กเกจที่ตอบโจทย์ความต้องการของ Startup คุณ ปรับเปลี่ยนได้ตลอดเวลา</p>
+            </div>
+
+            <div class="row g-4 align-items-center justify-content-center">
+                <!-- Starter Plan -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="price-card text-center">
+                        <h4 class="fw-bold">Starter</h4>
+                        <p class="text-secondary small">เหมาะสำหรับทีมเริ่มต้นขนาดเล็ก</p>
+                        <div class="my-4">
+                            <span class="display-4 fw-bold">฿0</span>
+                            <span class="text-secondary">/ เดือน</span>
+                        </div>
+                        <ul class="list-unstyled text-start my-4 gap-3 d-flex flex-column text-secondary small">
+                            <li><i class="bi bi-check-circle-fill text-info me-2"></i> สมาชิกไม่เกิน 5 คน</li>
+                            <li><i class="bi bi-check-circle-fill text-info me-2"></i> โครงการทำงานสูงสุด 3 โครงการ</li>
+                            <li><i class="bi bi-check-circle-fill text-info me-2"></i> พื้นที่เก็บข้อมูล 5 GB</li>
+                        </ul>
+                        <button class="btn btn-outline-light w-100 rounded-pill py-2 fw-semibold">เริ่มต้นใช้งานฟรี</button>
+                    </div>
+                </div>
+
+                <!-- Pro Startup Plan (Featured) -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="price-card featured text-center position-relative">
+                        <span class="badge bg-primary rounded-pill px-3 py-2 text-uppercase mb-3 small">Popular Choice</span>
+                        <h4 class="fw-bold text-info">Pro Startup</h4>
+                        <p class="text-secondary small">สำหรับทีม Startup ที่กำลังเติบโต</p>
+                        <div class="my-4">
+                            <span class="display-4 fw-bold text-white">฿490</span>
+                            <span class="text-secondary">/ เดือน</span>
+                        </div>
+                        <ul class="list-unstyled text-start my-4 gap-3 d-flex flex-column text-light small">
+                            <li><i class="bi bi-check-circle-fill text-info me-2"></i> สมาชิกไม่จำกัดจำนวน</li>
+                            <li><i class="bi bi-check-circle-fill text-info me-2"></i> สร้างโครงการได้ไม่จำกัด</li>
+                            <li><i class="bi bi-check-circle-fill text-info me-2"></i> ระบบประมวลผล Zati AI Engine</li>
+                            <li><i class="bi bi-check-circle-fill text-info me-2"></i> สรุปรายงานประจำสัปดาห์</li>
+                        </ul>
+                        <button class="btn btn-primary w-100 rounded-pill py-2 fw-bold shadow">ทดลองใช้ฟรี 14 วัน</button>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="price-card text-center">
+                        <h4 class="fw-bold">Enterprise</h4>
+                        <p class="text-secondary small">สำหรับองค์กรขนาดใหญ่</p>
+                        <div class="my-4">
+                            <span class="display-4 fw-bold">฿1,290</span>
+                            <span class="text-secondary">/ เดือน</span>
+                        </div>
+                        <ul class="list-unstyled text-start my-4 gap-3 d-flex flex-column text-secondary small">
+                            <li><i class="bi bi-check-circle-fill text-info me-2"></i> ฟีเจอร์ Pro ทั้งหมด</li>
+                            <li><i class="bi bi-check-circle-fill text-info me-2"></i> Dedicated Server & SLA 99.9%</li>
+                            <li><i class="bi bi-check-circle-fill text-info me-2"></i> ผู้ดูแลระบบส่วนตัว 24/7</li>
+                        </ul>
+                        <button class="btn btn-outline-light w-100 rounded-pill py-2 fw-semibold">ติดต่อฝ่ายขาย</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Social Links & Contact Section (อยู่ส่วนท้ายสุด) -->
+    <section id="contact" class="py-5 bg-dark bg-opacity-50 border-top border-secondary border-opacity-20">
+        <div class="container py-4">
+            <div class="row g-5 align-items-center">
+                <!-- Left Column: Contact info & Social Links -->
+                <div class="col-lg-6 col-12">
+                    <span class="text-info fw-bold text-uppercase">Get in Touch</span>
+                    <h2 class="display-5 fw-bold mt-2 mb-4">CONTACT US</h2>
+                    <p class="text-secondary mb-4">
+                        หากคุณมีคำถามหรือต้องการสอบถามข้อมูลเพิ่มเติมเกี่ยวกับผลิตภัณฑ์ Zanflow ทีมงานของเราพร้อมให้บริการเสมอ
+                    </p>
+
+                    <div class="d-flex flex-column gap-3 mb-4">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="social-pill"><i class="bi bi-envelope"></i></div>
+                            <span>admin@zanflowcorp.com</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="social-pill"><i class="bi bi-telephone"></i></div>
+                            <span>(+66) 64 263 9253</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="social-pill"><i class="bi bi-geo-alt"></i></div>
+                            <span>สถาบันการจัดการปัญญาภิวัฒน์ (PIM) แจ้งวัฒนะ นนทบุรี</span>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="mt-4">
+                        <h6 class="fw-semibold mb-3">ติดตามเราบนโซเชียลมีเดีย:</h6>
+                        <div class="d-flex gap-2">
+                            <a href="https://facebook.com" target="_blank" class="social-pill"><i class="bi bi-facebook"></i></a>
+                            <a href="https://twitter.com" target="_blank" class="social-pill"><i class="bi bi-twitter-x"></i></a>
+                            <a href="https://instagram.com" target="_blank" class="social-pill"><i class="bi bi-instagram"></i></a>
+                            <a href="https://linkedin.com" target="_blank" class="social-pill"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive Contact Form Card -->
+                <div class="col-lg-6 col-12">
+                    <div class="contact-form-card">
+                        <h4 class="fw-bold mb-4">Send us a message</h4>
+                        <form onsubmit="event.preventDefault(); alert('ข้อความของคุณถูกส่งเรียบร้อยแล้ว!');">
+                            <div class="row g-3">
+                                <div class="col-md-6 col-12">
+                                    <label class="form-label small text-secondary">First Name</label>
+                                    <input type="text" class="form-control form-control-custom" placeholder="ชื่อจริง" required>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <label class="form-label small text-secondary">Last Name</label>
+                                    <input type="text" class="form-control form-control-custom" placeholder="นามสกุล" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small text-secondary">Email Address</label>
+                                    <input type="email" class="form-control form-control-custom" placeholder="name@company.com" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small text-secondary">Message</label>
+                                    <textarea class="form-control form-control-custom" rows="4" placeholder="พิมพ์ข้อความที่ต้องการติดต่อ..." required></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-primary w-100 rounded-pill py-3 fw-bold">
+                                        ส่งข้อความ <i class="bi bi-send-fill ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary border-opacity-20 my-5">
+
+            <!-- Footer & PIM Link -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 text-secondary small">
+                <div>
+                    © 2026 Zanflow Innovation Co., Ltd. All rights reserved.
+                </div>
+                <div>
+                    สถาบันการจัดการปัญญาภิวัฒน์ (PIM) |
+                    <a href="https://www.pim.ac.th" target="_blank" class="text-warning text-decoration-none fw-semibold">
+                        <i class="bi bi-globe me-1"></i>www.pim.ac.th
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
